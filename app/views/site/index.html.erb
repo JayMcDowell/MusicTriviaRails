@@ -1,0 +1,7 @@
+<h1>Welcome!</h1>
+<h3>Please enter your initials.</h3>
+    <%= form_for User.new, :url => users_path do |f| %>
+      <%= f.label :initials %>
+      <%= f.text_field :initials %>
+      <%= f.submit "submit" %>
+    <% end %>
