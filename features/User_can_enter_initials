@@ -1,0 +1,12 @@
+Feature: User can enter initials
+  In order to play the quiz
+  As a user
+  I want to enter my initials
+
+
+  Scenario: Happy Path
+    Given the user "jmm"
+    When I go to the homepage
+    And I fill in "jmm"
+    And I press "submit"
+    And I will be sent to next page
