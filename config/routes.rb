@@ -2,6 +2,8 @@ MQR::Application.routes.draw do
   root :to => 'site#index'
   resources :users
   resources :quizzes
+
+  match "take-quiz" => 'site#takequiz', :as => 'takequiz'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

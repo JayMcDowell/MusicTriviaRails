@@ -20,10 +20,10 @@ Usage:
 
 This is a standard rails web app.  To run the tests, use 'rake'.  To run the app, use 'localhost:3000'.
 
-ToDo/Project State:
+Project State:
 ===================
 
-Just starting.
+Some Cucumber tests have been used to add some of the basic features.  I'm feeling cautiously optimistic.  The magic is happening.
 
 Changelog:
 ==========

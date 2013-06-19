@@ -2,8 +2,11 @@ class UsersController < ApplicationController
 
     def create
       # binding.pry
-      user = User.find_or_create_by_initials(params[:user][:initials])
-      redirect_to quizzes_url
+      user = User.find_by_initials(params[:user][:initials])
+      if user.blank?
+        user = User.create(params[:user])
+        session[:new_user] = true
     end
-
+      redirect_to quizzes_path
+    end
 end

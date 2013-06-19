@@ -1,1 +1,26 @@
-<h1>Welcome back!</h1>
+<% if @new_user %>
+  <h1>Welcome to The Show!</h1>
+<% else %>
+  <h1>Welcome back!  Choose a new quiz.</h1>
+<% end %>
+</br>
+<h2>You have the choice of </h2>
+<%= form_tag quizzes_path do %>
+  <%@quizzes.each do |quiz| %>
+    <%= radio_button_tag(:quiz_preference, quiz.name) %>
+    <%= label_tag(:quiz_preference, quiz.name) %>
+    </br>
+  <% end %>
+
+  <h2>You can also choose the difficulty level </h2>
+  <%= radio_button_tag(:level_preference, "easy") %>
+  <%= label_tag(:level_preference, "Easy") %>
+  </br>
+  <%= radio_button_tag(:level_preference, "medium") %>
+  <%= label_tag(:level_preference, "Medium") %>
+  </br>
+  <%= radio_button_tag(:level_preference, "hard") %>
+  <%= label_tag(:level_preference, "Hard") %>
+  </br>
+  <%= submit_tag "submit" %>
+<% end %>
