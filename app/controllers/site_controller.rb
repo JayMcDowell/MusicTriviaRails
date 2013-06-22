@@ -22,7 +22,7 @@ class SiteController < ApplicationController
             percentage = user_correct_answers.to_f / user_answers.to_f
             @message << "#{(percentage * 100).to_i}% of users got this question right."
           else
-            puts "No previous user got this question right"
+            @message << "No previous user got this question right"
           end
         end
       else
