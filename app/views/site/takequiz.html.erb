@@ -1,30 +1,35 @@
 <% if @message %>
-  <%= @message %>
+  <%= @message.html_safe %>
 <% end %>
-<%= form_tag takequiz_path do %>
-  <h2><%= @question.query %></h2>
 
-  <p>
-    <%= radio_button_tag(:answer, "a") %>
-    <%= label_tag(:answer, @question.a) %>
-  </p>
+<% if @question %>
+  <%= form_tag takequiz_path do %>
+    <h2><%= @question.query %></h2>
 
-  <p>
-    <%= radio_button_tag(:answer, "b") %>
-    <%= label_tag(:answer, @question.b) %>
-  </p>
+    <p>
+      <%= radio_button_tag(:answer, "a") %>
+      <%= label_tag(:answer, @question.a) %>
+    </p>
 
-  <p>
-    <%= radio_button_tag(:answer, "c") %>
-    <%= label_tag(:answer, @question.c) %>
-  </p>
+    <p>
+      <%= radio_button_tag(:answer, "b") %>
+      <%= label_tag(:answer, @question.b) %>
+    </p>
 
-  <p>
-    <%= radio_button_tag(:answer, "d") %>
-    <%= label_tag(:answer, @question.d) %>
-  </p>
+    <p>
+      <%= radio_button_tag(:answer, "c") %>
+      <%= label_tag(:answer, @question.c) %>
+    </p>
 
-  <%= hidden_field_tag :question_id, @question.id %>
+    <p>
+      <%= radio_button_tag(:answer, "d") %>
+      <%= label_tag(:answer, @question.d) %>
+    </p>
 
-  <%= submit_tag "submit" %>
+    <%= hidden_field_tag :question_id, @question.id %>
+    <%= hidden_field_tag :correct_answer, @question.correct_answer %>
+
+    <%= submit_tag "submit" %>
+
+  <% end %>
 <% end %>

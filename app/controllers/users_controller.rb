@@ -1,7 +1,6 @@
 class UsersController < ApplicationController
 
     def create
-      # binding.pry
       user = User.find_by_initials(params[:user][:initials])
       if user.blank?
         user = User.create(params[:user])
