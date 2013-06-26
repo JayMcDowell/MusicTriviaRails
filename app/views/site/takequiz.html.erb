@@ -1,29 +1,33 @@
+    <div class="twelve columns">
+      <div class="four columns">
+      </div>
+        <div class="eight columns">
 <% if @message %>
   <%= @message.html_safe %>
 <% end %>
 
 <% if @question %>
   <%= form_tag takequiz_path do %>
-    <h2><%= @question.query %></h2>
+    <h3><%= @question.query %></h3>
 
     <p>
       <%= radio_button_tag(:answer, "a") %>
-      <%= label_tag(:answer, @question.a) %>
+      <%= label_tag(:answer, @question.a, class: "radiopref") %>
     </p>
 
     <p>
       <%= radio_button_tag(:answer, "b") %>
-      <%= label_tag(:answer, @question.b) %>
+      <%= label_tag(:answer, @question.b, class: "radiopref") %>
     </p>
 
     <p>
       <%= radio_button_tag(:answer, "c") %>
-      <%= label_tag(:answer, @question.c) %>
+      <%= label_tag(:answer, @question.c, class: "radiopref") %>
     </p>
 
     <p>
       <%= radio_button_tag(:answer, "d") %>
-      <%= label_tag(:answer, @question.d) %>
+      <%= label_tag(:answer, @question.d, class: "radiopref") %>
     </p>
 
     <%= hidden_field_tag :question_id, @question.id %>

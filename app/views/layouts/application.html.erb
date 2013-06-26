@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>MQR</title>
+  <meta charset="utf-8" />
+  <meta name="MQR" content="width=device-width, initial-scale=1.0">
+  <title>NSS Music Trivia Quiz</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
-</head>
-<body>
 
-<%= yield %>
+</head>
+<body class="bckgrd">
+  <ul class="nav-bar">
+    <h3 class="banner"> Music Trivia Quiz </h3>
+  </ul>
+
+  <%= yield %>
 
 </body>
 </html>

@@ -1,26 +1,31 @@
-<% if @new_user %>
-  <h1>Welcome to The Show!</h1>
+
+    <div class="twelve columns">
+      <div class="four columns">
+      </div>
+        <div class="eight columns">
+          <% if @new_user %>
+  <h2>Welcome to The Show!</h2>
 <% else %>
-  <h1>Welcome back!  Choose a new quiz.</h1>
+  <h2>Welcome back!  Choose a new quiz.</h2>
 <% end %>
 </br>
-<h2>You have the choice of </h2>
+<h3>You have the choice of </h3>
 <%= form_tag quizzes_path do %>
   <%@quizzes.each do |quiz| %>
     <%= radio_button_tag(:quiz_preference, quiz.name) %>
-    <%= label_tag(:quiz_preference, quiz.name) %>
+    <%= label_tag(:quiz_preference, quiz.name, class: "radiopref") %>
     </br>
   <% end %>
 
-  <h2>You can also choose the difficulty level </h2>
+  <h3>You can also choose the difficulty level </h3>
   <%= radio_button_tag(:level_preference, "easy") %>
-  <%= label_tag(:level_preference, "Easy") %>
+  <%= label_tag(:level_preference, "Easy", class: "radiopref") %>
   </br>
   <%= radio_button_tag(:level_preference, "medium") %>
-  <%= label_tag(:level_preference, "Medium") %>
+  <%= label_tag(:level_preference, "Medium", class: "radiopref") %>
   </br>
   <%= radio_button_tag(:level_preference, "hard") %>
-  <%= label_tag(:level_preference, "Hard") %>
+  <%= label_tag(:level_preference, "Hard", class: "radiopref") %>
   </br>
   <%= submit_tag "submit" %>
 <% end %>
