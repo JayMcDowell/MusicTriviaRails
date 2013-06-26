@@ -1,4 +1,4 @@
-    <div class="twelve columns">
+    <div class="twelve columns" id="nss">
       <div class="four columns">
       </div>
         <div class="eight columns">
@@ -33,7 +33,7 @@
     <%= hidden_field_tag :question_id, @question.id %>
     <%= hidden_field_tag :correct_answer, @question.correct_answer %>
     <%= hidden_field_tag :correct, @correct %>
-
+    <br/>
     <%= submit_tag "submit" %>
 
   <% end %>

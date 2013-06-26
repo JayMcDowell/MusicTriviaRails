@@ -20,6 +20,17 @@
   clear: both;
 }
 
+#nss {
+  margin-top: 5%;
+  margin-left: 15%;
+}
+
+#strt {
+  background-color: black;
+  position: relative;
+  top:-4%;
+}
+
 .bckgrd {
   background-image:url('MQRbackground.jpg');
 }
@@ -35,6 +46,7 @@
 
 .radiopref {
   display:inline;
+  font-weight: bold;
 }
 
 h1 {

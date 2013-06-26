@@ -24,9 +24,9 @@ class SiteController < ApplicationController
         user_answers = Answer.where(question_id: @question.id).count
         if user_correct_answers > 0
           percentage = user_correct_answers.to_f / user_answers.to_f
-          @message << "#{(percentage * 100).to_i}% of users got this question right."
+          @message << "<br/>#{(percentage * 100).to_i}% of users got this question right."
         else
-          @message << "<br/>No previous user got this question right."
+          @message << "<br/>No previous user got that question right."
         end
       else
         @message = "That is a wrong guess.<br/>The correct answer is #{params[:correct_answer]}"
@@ -35,13 +35,13 @@ class SiteController < ApplicationController
         user_answers = Answer.where(question_id: @question.id).count
         if user_incorrect_answers > 0
           percentage = user_incorrect_answers.to_f / user_answers.to_f
-          @message << "#{(percentage * 100).to_i}% of users got this question wrong."
+          @message << "<br/>#{(percentage * 100).to_i}% of users got this question wrong."
         else
-          @message << "No previous user got this question wrong....loser."
+          @message << "<br/>No previous user got that question wrong....loser."
         end
       end
       Answer.create(question_id: @question.id, user_id: session[:user_id], correct: correct_answer)
-      if session[:num_question] == 3
+      if session[:num_question] == 20
         @message << "<br/><br/>Your final score is #{session[:score]} out of a possible #{session[:num_question] * 5}"
         if session[:score] >99
           @message << "<br/> You rock!  You didn't miss a beat."
@@ -58,7 +58,7 @@ class SiteController < ApplicationController
         @question = nil
         render :takequiz and return
       else
-        @message << "Your score is #{session[:score]} out of a possible #{session[:num_question] * 5}."
+        @message << "<br/>Your score is #{session[:score]} out of a possible #{session[:num_question] * 5}."
       end
       session[:num_question] += 1
     end
