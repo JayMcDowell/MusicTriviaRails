@@ -1,17 +1,13 @@
-
-    <div class="twelve columns" id="nss">
-      <div class="four columns">
-      </div>
-        <div class="eight columns">
-<h3>You chose the <%= session[:level_preference] %> <%= session[:quiz_preference] %> quiz.</h3>
+<div class="container" class="clearfix" id="bckgrd3">
+  <div id="chose">
+<h4>You chose the <%= session[:level_preference] %> <%= session[:quiz_preference] %> quiz.</h3>
 </br>
-</br>
-<h3>Each question is worth 5 points.
+<h4>Each question is worth 5 points.
 </br>
 There are 20 questions in each quiz.</h3>
 </br>
-</br>
-<h3>Are you ready to start?
+<h4>Are you ready to start?
 </br>
 Press <a href="<%= takequiz_path %>" class="button radius" id="strt">Start</a> to continue.</h3>
-
+  </div>
+</div>

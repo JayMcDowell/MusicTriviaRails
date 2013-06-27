@@ -1,11 +1,10 @@
-<div class="twelve columns" id="nss">
-  <div class="four columns"></div>
-    <div class="eight columns" class="text-center" class="clearfix">
-  <h2>Welcome!</h2>
-<h3>Please enter your initials.</h3>
+    <div class="container" class="clearfix" id="bckgrd1">
+<div id="welcome">
+  <h3>Welcome!</h3>
+<h4>Please enter your initials.</h4>
     <%= form_for User.new, :url => users_path do |f| %>
       <%= f.text_field :initials %>
       <%= f.submit "submit" %>
     <% end %>
     </div>
-</div>
+  </div>
