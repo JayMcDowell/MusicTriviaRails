@@ -1,4 +1,5 @@
 <h1>A Ruby on Rails Music Trivia Quiz</h1>
+<h1>by Jay McDowell</h1>
 
 <h2>Goals:</h2>
 
