@@ -98,11 +98,14 @@ left: 12%;
 }
 
 #header {
-text-align: center;
+text-align: left;
 position: relative;
-top: -150%;
-font-family:impact;
-font-size: 5em;
+top: -43%;
+left: 17%;
+font-family:thonburi;
+color:gray;
+font-size: 1.25em;
+
 }
 
 .banner {
@@ -141,8 +144,17 @@ font-weight: bold;
 color:white;
 }
 
-#styl {
+#stylee {
 font-weight: bold;
 color:black;
+font-size: 1.25em;
+line-height: 1.5em;
+border:solid;
+border-width: 2px;
+padding: 10px;
+}
+
+.first {
+margin-top: 4%
 }
 

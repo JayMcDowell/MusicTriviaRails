@@ -1,6 +1,6 @@
 <div class="container" class="clearfix" id="bckgrd4">
 <div class="row quest">
-  <div class="eight" id="styl">
+  <div class="eight" id="stylee">
 <% if @message %>
   <%= @message.html_safe %>
 <% end %>
@@ -11,7 +11,7 @@
 
     <p>
       <%= radio_button_tag(:answer, "a") %>
-      <%= label_tag(:answer, @question.a, class: "radiopref") %>
+      <%= label_tag(:answer, @question.a, class: "radiopref first") %>
     </p>
 
     <p>
