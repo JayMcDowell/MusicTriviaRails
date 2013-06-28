@@ -561,7 +561,7 @@ nineties_questions = [
   [ 'hard', 'What is singer/songwriter Desmond Child\'s real name?', 'Eugene Dixon', 'Andrew Wright', 'Desmond Cain', 'John Charles Barrett, Jr.', 'John Charles Barrett, Jr.' ],
   [ 'hard', 'What name did producer Kenny "Dope" Gonzalez use when he recorded "The Bomb! (These Sounds Fall Into My Mind)"?', 'The Bucketheads', 'Club 69', 'Love, Inc', 'Faithless', 'The Bucketheads' ],
   [ 'hard', 'Depeche Mode\'s 1990 album was titled "Music For The ____" (fill in the blank)', 'People', 'Joneses', 'Others', 'Masses', 'Masses' ],
-  [ 'hard', 'What singer/actor married actress Jill Goodacre in 1994?', 'Jon Bon Jovi', 'Phil Collins', 'Lou Diamond Phillips', 'Joe Shepherd', 'Harry Connick, Jr.' ],
+  [ 'hard', 'What singer/actor married actress Jill Goodacre in 1994?', 'Jon Bon Jovi', 'Harry Connick, Jr.', 'Lou Diamond Phillips', 'Joe Shepherd', 'Harry Connick, Jr.' ],
   [ 'hard', 'What rock band released the critically aclaimed album "Goo" in 1990?', 'Alice In Chains', 'Sonic Youth', 'Soundgarden', 'The Pixies', 'Sonic Youth' ],
   [ 'hard', 'What Ohio Players song was sampled in DJ Jazzy Jeff & the Fresh Prince\'s "Boom! Shake The Room"?', 'Fire', 'Funky Worm', 'Just Another Day', 'Love Rollercoaster', 'Funky Worm' ],
   [ 'hard', 'What group appeared in the movie "The Meteor Man"?', 'Kris Kross', 'Another Bad Creation', 'Hanson', 'Bell Biv DeVoe', 'Another Bad Creation' ],

@@ -29,6 +29,7 @@ margin-left: 15%;
 background-color: black;
 position: relative;
 top:-4%;
+
 }
 
 #bckgrd1 {
@@ -56,20 +57,17 @@ height: 900px;
 #choice {
 color:white;
 position: relative;
-top: 15%;
+top: 12%;
 left: 12%;
 }
 
 #choice2 {
 color:white;
 position: relative;
-top: 14%;
-left: 33%;
+top: 13%;
+left: 12%;
 }
 
-.moon {
-  color:white;
-}
 
 #bckgrd3 {
 background: url(U2JMM.jpg);
@@ -83,6 +81,20 @@ height: 900px;
 position: relative;
 top: 14%;
 left: 33%;
+}
+
+#bckgrd4 {
+background: url(BeatlesJumpJMM.jpg);
+background-size:80%;
+background-position:50% 38%;
+background-repeat:no-repeat;
+height: 900px;
+}
+
+#quest {
+position: relative;
+top: 9%;
+left: 12%;
 }
 
 #header {
@@ -107,10 +119,30 @@ color: black;
 text-align: center;
 }
 
+.quest {
+position: relative;
+top: 11%;
+left: 15%;
+}
+
 .radiopref {
+color:black;
 display:inline;
 font-weight: bold;
 }
 
+.moonpref {
+color:white;
+display:inline;
+font-weight: bold;
+}
 
+.moon {
+color:white;
+}
+
+#styl {
+font-weight: bold;
+color:black;
+}
 

@@ -1,14 +1,13 @@
-    <div class="twelve columns" id="nss">
-      <div class="four columns">
-      </div>
-        <div class="eight columns">
+<div class="container" class="clearfix" id="bckgrd4">
+<div class="row quest">
+  <div class="eight" id="styl">
 <% if @message %>
   <%= @message.html_safe %>
 <% end %>
 
 <% if @question %>
   <%= form_tag takequiz_path do %>
-    <h3><%= @question.query %></h3>
+    <h4 id="qiz"><%= @question.query %></h4>
 
     <p>
       <%= radio_button_tag(:answer, "a") %>
@@ -38,3 +37,6 @@
 
   <% end %>
 <% end %>
+</div>
+</div>
+</div>

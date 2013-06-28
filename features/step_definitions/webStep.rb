@@ -13,3 +13,7 @@ end
 Then(/^I should be sent to next page$/) do
   visit "/quizzes"
 end
+
+When I select a quiz
+And I click "submit"
+    Then I should be sent to next page
