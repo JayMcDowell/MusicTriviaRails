@@ -33,7 +33,7 @@ The project will be presented on June 28th.</h3>
 <h3>Project State:</h3>
 
 
-<h4>The magic is happening.</h4>
+<h4>The magic is happening!</h4>
 
 <h3>Changelog:</h3>
 
