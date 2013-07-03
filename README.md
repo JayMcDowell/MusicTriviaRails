@@ -22,7 +22,7 @@ The project will be presented on June 28th.</h3>
 <h4>2. User should be able to view score.</h4>
 <h4>3. Users can choose the quiz genre they want to take.</h4>
 <h4>4. Users can choose the level of difficulty of a quiz.</h4>
-<h4>5. Users will be praised/shamed based on their performance.</h4>
+<h4>5. Users  will be praised/shamed based on their performance.</h4>
 
 <h3>Usage:</h3>
 
