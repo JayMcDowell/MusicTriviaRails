@@ -30,7 +30,7 @@ The project will be presented on June 28th.</h3>
 
 <h4>This is a standard rails web app.  To run the tests, use 'rake'.  To run the app, use 'localhost:3000'.</h4>
 
-<h3>Project State:</h3>
+<h3>Project  State:</h3>
 
 
 <h4>The magic is happening!</h4>
