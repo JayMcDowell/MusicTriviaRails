@@ -58,7 +58,7 @@ class SiteController < ApplicationController
         @question = nil
         render :takequiz and return
       else
-        @message << "<br/>Your score is #{session[:score]} out of a possible #{session[:num_question] * 5}."
+        @message << "<br/>Your score is #{session[:score]} out of a possible #{session[:num_question] * 10}."
       end
       session[:num_question] += 1
     end
