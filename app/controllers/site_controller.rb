@@ -42,7 +42,7 @@ class SiteController < ApplicationController
       end
       Answer.create(question_id: @question.id, user_id: session[:user_id], correct: correct_answer)
       if session[:num_question] == 10
-        @message << "<br/><br/>Your final score is #{session[:score]} out of a possible #{session[:num_question] * 5}"
+        @message << "<br/><br/>Your final score is #{session[:score]} out of a possible #{session[:num_question] * 10}"
         if session[:score] >99
           @message << "<br/> You rock!  You didn't miss a beat."
         elsif session[:score] > 89
