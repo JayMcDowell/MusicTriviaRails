@@ -65,7 +65,7 @@ class SiteController < ApplicationController
     if session[:level_preference] == "medium"
       @question = quiz.questions.sample
     else
-      @question = quiz.questions.where(:quiz_level => session[:level_preference]).random
+      @question = quiz.questions.where(:quiz_level => session[:level_preference]).sample
     end
   end
 end
