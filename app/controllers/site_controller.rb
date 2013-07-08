@@ -18,7 +18,7 @@ class SiteController < ApplicationController
         answer = @question.send(params[:answer].to_sym)
       if answer == @question.correct_answer
         @message = "That is correct!      "
-        session[:score] += 5
+        session[:score] += 10
         correct_answer = true
         user_correct_answers = Answer.where(question_id: @question.id, correct: true).count
         user_answers = Answer.where(question_id: @question.id).count
@@ -41,13 +41,13 @@ class SiteController < ApplicationController
         end
       end
       Answer.create(question_id: @question.id, user_id: session[:user_id], correct: correct_answer)
-      if session[:num_question] == 20
+      if session[:num_question] == 10
         @message << "<br/><br/>Your final score is #{session[:score]} out of a possible #{session[:num_question] * 5}"
         if session[:score] >99
           @message << "<br/> You rock!  You didn't miss a beat."
-        elsif session[:score] > 84
+        elsif session[:score] > 89
           @message << "<br/> Very nice, you know your music trivia."
-        elsif session[:score] > 54
+        elsif session[:score] > 59
           @message << "<br/> Good job.  You know more than the average 'Joe'."
         elsif session[:score] > 39
           @message << "<br/> Keep listenin', you've got some catching up to do."
